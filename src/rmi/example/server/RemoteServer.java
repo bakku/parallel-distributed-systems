@@ -16,7 +16,7 @@ public class RemoteServer {
 			RemoteUtilityImpl remoteUtility = new RemoteUtilityImpl();
 			
 			// locate the registry
-			Registry registry = LocateRegistry.getRegistry();
+			Registry registry = LocateRegistry.getRegistry("localhost", 1099);
 			
 			// bind the exported remote reference in the registry
 			String name = "MyRemoteUtility";

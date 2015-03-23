@@ -6,6 +6,8 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.time.ZonedDateTime;
 
+import rmi.example.server.RemoteUtility;
+
 public class RemoteClient {
 	public static void main(String[] args) {
 		SecurityManager secManager = System.getSecurityManager();
